@@ -1,0 +1,97 @@
+.downloadable-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-image: url('./background-downloadable-section.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
+}
+
+.downloadable-section .downloadable-section-container {
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.downloadable-section .downloadable-section-container .content {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+  margin-top: 70px;
+}
+
+.downloadable-section .downloadable-section-container .content h1 {
+  font-size: 35px;
+}
+.downloadable-section .downloadable-section-container .content h2 {
+  font-size: 18px;
+}
+
+.downloadable-section .downloadable-section-container .content .points {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  width: 200px;
+}
+
+.downloadable-section .downloadable-section-container .content p {
+  font-size: 11px;
+}
+
+.downloadable-section .downloadable-section-container .content p i {
+  margin-right: 10px;
+}
+
+.downloadable-section .downloadable-section-container .content .form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.downloadable-section .downloadable-section-container .content .form input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.downloadable-section .downloadable-section-container .content button {
+  flex-shrink: 0;
+}
+
+.downloadable-section .downloadable-section-container .illustration {
+  width: 60%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.downloadable-section .downloadable-section-container .illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(-30deg);
+}
+
+@media (width < 1000px) {
+  .downloadable-section .downloadable-section-container .illustration {
+    display: none;
+  }
+  .downloadable-section .downloadable-section-container .content {
+    width: 80%;
+  }
+}
+
+@media (width < 800px) {
+  .downloadable-section .downloadable-section-container .content h1 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,87 @@
+.introduction-section {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+}
+
+.introduction-section .introduction-section-container {
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.introduction-section .introduction-section-container .content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 70px;
+  flex-shrink: 0;
+}
+
+.introduction-section .introduction-section-container .content h1 {
+  font-size: 35px;
+}
+
+.introduction-section .introduction-section-container .content .points {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 30px 10px;
+}
+
+.introduction-section .introduction-section-container .content p {
+  font-size: 20px;
+  margin-right: 120px;
+}
+
+.introduction-section .introduction-section-container .content p i {
+  background-color: #edc444;
+  margin-right: 10px;
+}
+
+.introduction-section .introduction-section-container .illustration {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.introduction-section .introduction-section-container .illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (width < 1000px) {
+  .introduction-section .introduction-section-container .content h1 {
+    font-size: 25px;
+  }
+  .introduction-section .introduction-section-container .content p {
+    font-size: 15px;
+  }
+  .introduction-section .introduction-section-container .illustration {
+    width: 200px;
+  }
+}
+
+@media (width < 800px) {
+  .introduction-section .introduction-section-container .content {
+    margin-left: 0;
+  }
+  .introduction-section .introduction-section-container .content h1 {
+    font-size: 23px;
+  }
+  .introduction-section .introduction-section-container .content p {
+    font-size: 13px;
+  }
+  .introduction-section .introduction-section-container .illustration {
+    width: 175px;
+  }
+}
+
+@media (width < 600px) {
+  .introduction-section .introduction-section-container .illustration {
+    display: none;
+  }
+}

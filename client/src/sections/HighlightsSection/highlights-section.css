@@ -1,0 +1,82 @@
+.highlights-section {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.highlights-section .head {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.highlights-section .head h1 {
+  text-align: center;
+}
+
+.highlights-section p {
+  text-align: center;
+  margin: 20px;
+}
+
+.highlights-section .highlights-section-container {
+  width: 70%;
+  height: 80%;
+  margin: auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.highlights-section .highlights-section-container .highlights-card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlights-section .highlights-section-container .highlights-card img {
+  width: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.highlights-section .highlights-section-container .highlights-card h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.highlights-section .highlights-section-container .highlights-card p {
+  font-size: 12px;
+}
+
+@media (width < 1000px) {
+  .highlights-section .highlights-section-container {
+    width: 90%;
+  }
+  .highlights-section .head h1 {
+    font-size: 20px;
+  }
+}
+
+@media (width < 800px) {
+  .highlights-section .highlights-section-container .highlights-card p {
+    display: none;
+  }
+  .highlights-section .highlights-section-container .highlights-card {
+    width: 150px;
+    margin: 20px;
+  }
+  .highlights-section .highlights-section-container .highlights-card h2 {
+    font-size: 15px;
+  }
+}
+
+@media (width < 600px) {
+  .highlights-section .highlights-section-container .highlights-card {
+    width: 70px;
+    margin: 10px;
+  }
+}

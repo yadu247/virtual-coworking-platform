@@ -1,0 +1,88 @@
+.pricing-section {
+  height: 80vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-image: url('./background-pricing-section.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70%;
+}
+
+.pricing-section .head {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.pricing-section .head h1 {
+  text-align: center;
+}
+
+.pricing-section .pricing-section-container {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pricing-section .pricing-section-container .pricing-card {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.pricing-section .pricing-section-container .pricing-card h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.pricing-section .pricing-section-container .pricing-card p {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (width < 800px) {
+  .pricing-section .pricing-section-container {
+    width: 90%;
+  }
+  .pricing-section .head h1 {
+    font-size: 25px;
+  }
+  .pricing-section .pricing-section-container .pricing-card {
+    width: 30%;
+  }
+  .pricing-section .pricing-section-container .pricing-card h2 {
+    font-size: 20px;
+  }
+  .pricing-section .pricing-section-container .pricing-card h1 {
+    font-size: 23px;
+  }
+  .pricing-section .pricing-section-container .pricing-card p {
+    font-size: 13px;
+  }
+}
+
+@media (width < 600px) {
+  .pricing-section .pricing-section-container .pricing-card h1 {
+    font-size: 16px;
+  }
+  .pricing-section .pricing-section-container .pricing-card h2 {
+    font-size: 14px;
+  }
+  .pricing-section .pricing-section-container .pricing-card p {
+    font-size: 12px;
+  }
+}
